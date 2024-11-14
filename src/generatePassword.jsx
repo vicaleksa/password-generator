@@ -1,4 +1,4 @@
-function generatePassword(length, uppercase, lowercase, numbers, symbols) {
+function generatePassword({ length, uppercase, lowercase, numbers, symbols }) {
     const getRandomChar = () => {
         const charSets = []
         if (uppercase) {
@@ -26,5 +26,3 @@ function generatePassword(length, uppercase, lowercase, numbers, symbols) {
 
     return password;
 }
-
-// console.log(generatePassword(5, true, true, true, true))
