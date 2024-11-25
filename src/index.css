@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0 1rem;
+    background-color: #121118;
+    font-family: "JetBrains Mono", monospace;
+    color: #E6E5EA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
