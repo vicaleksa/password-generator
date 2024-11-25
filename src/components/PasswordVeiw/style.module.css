@@ -1,9 +1,27 @@
 .container {
+    height: 4rem;
     background-color: #24232C;
+    padding-left: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .password {
     color: #E6E5EA;
     font-size: 1.5rem;
+}
+
+.btn_copy {
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    align-self: stretch;
+}
+
+.copyIcon {
+    height: 20px;
 }
