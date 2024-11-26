@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 function Slider() {
     return (
-        <div className={styles.container}>
+        <div className={styles.slider_container}>
             <div className={styles.label}>
                 <label htmlFor="length">Character Length</label>
                 <span className={styles.length}>10</span>
