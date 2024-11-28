@@ -49,3 +49,13 @@
     border-color: #A4FFAF;
     background-color: #A4FFAF;
 }
+
+@media (min-width: 768px) {
+    .strengthMeter_container {
+        padding: 1.25rem 2rem;
+    }
+
+    .passwordStrength {
+        font-size: 1.5rem;
+    }
+}

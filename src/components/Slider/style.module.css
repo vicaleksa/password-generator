@@ -59,3 +59,13 @@
     border-radius: 0;
     border: none;
 }
+
+@media (min-width: 768px) {
+    .label {
+        padding-bottom: 1rem;
+    }
+
+    .length {
+        font-size: 2rem;
+    }
+}

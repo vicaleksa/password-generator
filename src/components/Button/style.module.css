@@ -25,3 +25,11 @@
 .button:hover .button_icon {
     fill: #A4FFAF;
 }
+
+@media (min-width: 768px) {
+    .button{
+        margin-top: 1rem;
+        gap: 1.5rem;
+        padding: 1.25rem;
+    }
+}

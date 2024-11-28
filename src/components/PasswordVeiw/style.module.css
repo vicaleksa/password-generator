@@ -1,4 +1,4 @@
-.container {
+.password_container {
     height: 4rem;
     background-color: #24232C;
     padding-left: 1rem;
@@ -24,4 +24,15 @@
 
 .copyIcon {
     height: 20px;
+}
+
+@media (min-width: 768px) {
+    .password_container {
+        margin-bottom: 1.5rem;
+        padding: 0.5rem 1rem 0.5rem 2rem;
+    }
+
+    .password {
+        font-size: 2rem;
+    }
 }

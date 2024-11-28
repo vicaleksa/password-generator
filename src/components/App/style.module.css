@@ -13,3 +13,10 @@ h1 {
     text-align: center;
     padding-bottom: 1rem;
 }
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+}

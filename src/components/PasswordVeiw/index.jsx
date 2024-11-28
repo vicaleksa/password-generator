@@ -4,7 +4,7 @@ import iconCopy from "/src/images/icon-copy.svg";
 
 function PasswordVeiw() {
     return (
-        <div className={styles.container}>
+        <div className={styles.password_container}>
             <p className={styles.password}>PTx1f5DaFX</p>
             <button className={styles.btn_copy}>
                 <img
