@@ -1,0 +1,27 @@
+.button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #A4FFAF;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button:hover {
+    background-color: transparent;
+    outline: 0.125rem solid  #A4FFAF;
+    color: #A4FFAF;
+}
+
+.button_icon {
+    fill: #24232C;
+}
+
+.button:hover .button_icon {
+    fill: #A4FFAF;
+}

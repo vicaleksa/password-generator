@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 import Slider from "../Slider";
 import Checkbox from "../Checkbox";
+import Button from "../Button";
 
 function Form() {
     const [formData, setFormData] = useState(
@@ -15,9 +16,9 @@ function Form() {
     );
 
     return (
-        <div>
+        <form className={styles.form_password}>
             <Slider length={formData.length} />
-            <div className={styles.checkbox_container}>
+            <div className={styles.checkbox_group}>
                 <Checkbox
                     text={"Include Uppercase Letters"}
                     name={"uppercase"}
@@ -39,7 +40,8 @@ function Form() {
                     checked={formData.symbols}
                 />
             </div>
-        </div>
+            <Button />
+        </form>
     )
 }
 
