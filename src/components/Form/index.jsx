@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import Slider from "../Slider";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
+import StrengthMeter from "../StrengthMeter";
 
 function Form() {
     const [formData, setFormData] = useState(
@@ -40,6 +41,7 @@ function Form() {
                     checked={formData.symbols}
                 />
             </div>
+            <StrengthMeter />
             <Button />
         </form>
     )

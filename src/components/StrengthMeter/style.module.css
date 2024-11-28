@@ -1,0 +1,51 @@
+.strengthMeter_container {
+    background-color: #18171F;
+    display: flex;
+    padding: 0.75rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.strengthMeter_label {
+    text-transform: uppercase;
+    color: #817D92;
+}
+
+.passwordStrength {
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+.passwordStrength_visual {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.passwordStrength_visual_block {
+    width: 0.625rem;
+    height: 1.75rem;
+    border: 0.125rem solid #E6E5EA;
+}
+
+.tooWeak {
+    border-color: #F64A4A;
+    background-color: #F64A4A;
+}
+
+.weak {
+    border-color: #FB7C58;
+    background-color: #FB7C58;
+}
+
+.medium {
+    border-color: #F8CD65;
+    background-color: #F8CD65;
+}
+
+.strong {
+    border-color: #A4FFAF;
+    background-color: #A4FFAF;
+}
