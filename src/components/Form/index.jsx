@@ -9,36 +9,54 @@ function Form() {
     const [formData, setFormData] = useState(
         {
             length: 4,
-            uppercase: true,
-            lowercase: true,
+            uppercase: false,
+            lowercase: false,
             numbers: false,
-            symbols: true
+            symbols: false
         }
     );
 
+    const handleChange = (e) => {
+        const {type, name, value, checked} = e.target;
+        setFormData(prevData => {
+            return {
+                ...prevData,
+                [name]: type === "checkbox" ? checked : value
+            }
+        })
+    }
+
     return (
         <form className={styles.form_password}>
-            <Slider length={formData.length} />
+            <Slider
+                name={'length'}
+                value={formData.length}
+                handleChange={handleChange}
+            />
             <div className={styles.checkbox_group}>
                 <Checkbox
                     text={"Include Uppercase Letters"}
                     name={"uppercase"}
                     checked={formData.uppercase}
+                    handleChange={handleChange}
                 />
                 <Checkbox
                     text={"Include Lowercase Letters"}
                     name={"lowercase"}
                     checked={formData.lowercase}
+                    handleChange={handleChange}
                 />
                 <Checkbox
                     text={"Include Numbers"}
                     name={"numbers"}
                     checked={formData.numbers}
+                    handleChange={handleChange}
                 />
                 <Checkbox
                     text={"Include Symbols"}
                     name={"symbols"}
                     checked={formData.symbols}
+                    handleChange={handleChange}
                 />
             </div>
             <StrengthMeter />

@@ -25,6 +25,7 @@
 .checkbox_input:checked {
     background-color: #A4FFAF;
     border: none;
+    flex-shrink: 0;
 }
 
 .checkbox_input:checked:after {
