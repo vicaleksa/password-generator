@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 function Button() {
     return (
-        <button type="button" className={styles.button}>
+        <button className={styles.button}>
             Generate
             <svg
                 className={styles.button_icon}

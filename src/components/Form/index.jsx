@@ -4,12 +4,13 @@ import Slider from "../Slider";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
 import StrengthMeter from "../StrengthMeter";
+import generatePassword from "/src/generatePassword.jsx";
 
-function Form() {
+function Form({ onSubmit }) {
     const [formData, setFormData] = useState(
         {
             length: 4,
-            uppercase: false,
+            uppercase: true,
             lowercase: false,
             numbers: false,
             symbols: false
@@ -26,8 +27,25 @@ function Form() {
         })
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const generatedPassword = generatePassword(
+            formData.length,
+            formData.uppercase,
+            formData.lowercase,
+            formData.numbers,
+            formData.symbols
+        );
+        onSubmit(generatedPassword);
+    }
+
     return (
-        <form className={styles.form_password}>
+        <form
+            className={styles.form_password}
+            onSubmit={handleSubmit}
+            name="password_generator"
+        >
             <Slider
                 name={'length'}
                 value={formData.length}

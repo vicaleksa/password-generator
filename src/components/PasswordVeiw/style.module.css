@@ -9,6 +9,11 @@
 }
 
 .password {
+    color: #55545C;
+    font-size: 1.5rem;
+}
+
+.password_filled {
     color: #E6E5EA;
     font-size: 1.5rem;
 }
@@ -33,6 +38,10 @@
     }
 
     .password {
+        font-size: 2rem;
+    }
+
+    .password_filled {
         font-size: 2rem;
     }
 }
