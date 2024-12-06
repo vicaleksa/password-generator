@@ -4,7 +4,7 @@ import Slider from "../Slider";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
 import StrengthMeter from "../StrengthMeter";
-import generatePassword from "/src/generatePassword.jsx";
+import generatePassword from "utils/generatePassword.jsx";
 
 function Form({ onSubmit }) {
     const [formData, setFormData] = useState(

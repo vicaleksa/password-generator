@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
-import iconCopy from "/src/images/icon-copy.svg";
+import iconCopy from "images/icon-copy.svg";
 
 function PasswordVeiw({ password }) {
     let textClass = password ? styles.password_filled : styles.password;

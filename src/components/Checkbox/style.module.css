@@ -18,7 +18,7 @@
 .checkbox_input::after {
     content: "";
     position: absolute;
-    background-image: url(/src/images/icon-check.svg);
+    background-image: url(images/icon-check.svg);
     background-repeat: no-repeat;
 }
 
