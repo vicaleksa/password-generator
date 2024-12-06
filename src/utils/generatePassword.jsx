@@ -10,7 +10,7 @@ const getRandomChar = (uppercase, lowercase, numbers, symbols) => {
         charSets.push([48, 57]);
     }
     if (symbols) {
-        charSets.push([33, 47], [91, 96]);
+        charSets.push([33, 47], [58, 64], [91, 96], [123, 126]);
     }
     const charSet = charSets[Math.floor(Math.random() * charSets.length)];
     const charCode = Math.floor(Math.random() * (charSet[1] - charSet[0] + 1) + charSet[0]);

@@ -5,6 +5,7 @@ import Checkbox from "../Checkbox";
 import Button from "../Button";
 import StrengthMeter from "../StrengthMeter";
 import generatePassword from "utils/generatePassword.jsx";
+import getPasswordComplexity from "utils/getPasswordComplexity";
 
 function Form({ onSubmit }) {
     const [formData, setFormData] = useState(
@@ -16,6 +17,7 @@ function Form({ onSubmit }) {
             symbols: false
         }
     );
+    const [passwordComplexity, setPasswordComplexity] = useState(null);
 
     const handleChange = (e) => {
         const {type, name, value, checked} = e.target;
@@ -37,6 +39,17 @@ function Form({ onSubmit }) {
             formData.numbers,
             formData.symbols
         );
+
+        setPasswordComplexity(prev => {
+            return getPasswordComplexity(
+                formData.length,
+                formData.uppercase,
+                formData.lowercase,
+                formData.numbers,
+                formData.symbols
+            );
+        })
+
         onSubmit(generatedPassword);
     }
 
@@ -77,7 +90,7 @@ function Form({ onSubmit }) {
                     handleChange={handleChange}
                 />
             </div>
-            <StrengthMeter />
+            <StrengthMeter passwordComplexity={passwordComplexity} />
             <Button />
         </form>
     )

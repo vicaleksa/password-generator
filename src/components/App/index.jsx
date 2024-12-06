@@ -6,10 +6,7 @@ import Form from "../Form";
 function App() {
     const [password, setPassword] = useState(null);
 
-    const onSubmit = (password) => {
-        setPassword(password);
-    }
-
+    const onSubmit = (password) => setPassword(password);
 
     return (
         <div className={styles.app}>
