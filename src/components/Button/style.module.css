@@ -13,6 +13,7 @@
 }
 
 .button:hover {
+    cursor: pointer;
     background-color: transparent;
     outline: 0.125rem solid  #A4FFAF;
     color: #A4FFAF;
@@ -27,7 +28,7 @@
 }
 
 @media (min-width: 768px) {
-    .button{
+    .button {
         margin-top: 1rem;
         gap: 1.5rem;
         padding: 1.25rem;

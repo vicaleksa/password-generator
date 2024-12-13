@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./style.module.css";
 // import iconCheck from "/src/images/icon-check.svg";
 
-function Checkbox({ text, name, checked, handleChange }) {
+function Checkbox({ text, name, checked, onChange }) {
     return (
         <label className={styles.checkbox_container} htmlFor={name}>
             <input
@@ -10,7 +10,7 @@ function Checkbox({ text, name, checked, handleChange }) {
                 type="checkbox"
                 name={name}
                 checked={checked}
-                onChange={handleChange}
+                onChange={onChange}
             />
             <span className={styles.checkbox_label}>{text}</span>
         </label>

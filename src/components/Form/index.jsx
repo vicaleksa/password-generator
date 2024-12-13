@@ -62,32 +62,34 @@ function Form({ onSubmit }) {
             <Slider
                 name={'length'}
                 value={formData.length}
-                handleChange={handleChange}
+                onChange={handleChange}
+                min={4}
+                max={20}
             />
             <div className={styles.checkbox_group}>
                 <Checkbox
                     text={"Include Uppercase Letters"}
                     name={"uppercase"}
                     checked={formData.uppercase}
-                    handleChange={handleChange}
+                    onChange={handleChange}
                 />
                 <Checkbox
                     text={"Include Lowercase Letters"}
                     name={"lowercase"}
                     checked={formData.lowercase}
-                    handleChange={handleChange}
+                    onChange={handleChange}
                 />
                 <Checkbox
                     text={"Include Numbers"}
                     name={"numbers"}
                     checked={formData.numbers}
-                    handleChange={handleChange}
+                    onChange={handleChange}
                 />
                 <Checkbox
                     text={"Include Symbols"}
                     name={"symbols"}
                     checked={formData.symbols}
-                    handleChange={handleChange}
+                    onChange={handleChange}
                 />
             </div>
             <StrengthMeter passwordComplexity={passwordComplexity} />

@@ -19,7 +19,6 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: transparent;
 }
 
 .range_input::-webkit-slider-thumb {
@@ -34,6 +33,11 @@
     margin-top: -10px;
 }
 
+.range_input::-webkit-slider-thumb:hover {
+    border: 0.125rem solid #A4FFAF;
+    background-color: #18171F;
+}
+
 .range_input::-moz-range-thumb {
     height: 1.75rem;
     width: 1.75rem;
@@ -42,11 +46,15 @@
     cursor: pointer;
 }
 
+.range_input::-moz-range-thumb:hover {
+    border: 0.125rem solid #A4FFAF;
+    background-color: #18171F;
+}
+
 .range_input::-webkit-slider-runnable-track {
     width: 100%;
     height: 0.5rem;
     cursor: pointer;
-    background-color: #18171F;
     border-radius: 0;
     border: none;
 }
@@ -55,7 +63,6 @@
     width: 100%;
     height: 0.5rem;
     cursor: pointer;
-    background-color: #18171F;
     border-radius: 0;
     border: none;
 }

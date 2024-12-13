@@ -27,8 +27,14 @@
     align-self: stretch;
 }
 
-.copyIcon {
+.iconCopy {
     height: 20px;
+    fill: #A4FFAF;
+}
+
+.btn_copy:hover .iconCopy {
+    cursor: pointer;
+    fill: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -43,5 +49,9 @@
 
     .password_filled {
         font-size: 2rem;
+    }
+
+    .iconCopy {
+        height: 24px;
     }
 }
