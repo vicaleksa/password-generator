@@ -4,26 +4,33 @@
     padding-left: 1rem;
     margin-bottom: 1rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .password {
     color: #55545C;
     font-size: 1.5rem;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .password_filled {
     color: #E6E5EA;
-    font-size: 1.5rem;
+}
+
+.password_copyed {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    color: #A4FFAF;
 }
 
 .btn_copy {
     background-color: transparent;
     border: none;
     line-height: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
     align-self: stretch;
 }
 
@@ -35,6 +42,11 @@
 .btn_copy:hover .iconCopy {
     cursor: pointer;
     fill: #ffffff;
+}
+
+.btn_copy:disabled .iconCopy {
+    cursor: not-allowed;
+    fill: #55545C;
 }
 
 @media (min-width: 768px) {

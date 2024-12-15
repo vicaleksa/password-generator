@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./style.module.css";
 
-function Button() {
+function Button({ disabled }) {
     return (
-        <button className={styles.button}>
+        <button className={styles.button} disabled={disabled} >
             Generate
             <svg
                 className={styles.button_icon}

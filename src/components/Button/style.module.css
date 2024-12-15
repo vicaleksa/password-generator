@@ -12,18 +12,28 @@
     gap: 1rem;
 }
 
-.button:hover {
+.button:hover:not(:disabled) {
     cursor: pointer;
     background-color: transparent;
     outline: 0.125rem solid  #A4FFAF;
     color: #A4FFAF;
 }
 
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #55545C;
+    color: #24232C;
+}
+
+.button:disabled .button_icon {
+    fill: #55545C;
+}
+
 .button_icon {
     fill: #24232C;
 }
 
-.button:hover .button_icon {
+.button:hover:not(:disabled) .button_icon {
     fill: #A4FFAF;
 }
 

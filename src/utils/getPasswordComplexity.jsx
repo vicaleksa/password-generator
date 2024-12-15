@@ -1,6 +1,6 @@
 const CHARS_IN_UPPERCASE = 'Z'.charCodeAt() - 'A'.charCodeAt() + 1;
 const CHARS_IN_LOWERCASE = 'z'.charCodeAt() - 'a'.charCodeAt() + 1;
-const CHARS_IN_NUMBERS = '0'.charCodeAt() - '9'.charCodeAt() + 1;
+const CHARS_IN_NUMBERS = '9'.charCodeAt() - '0'.charCodeAt() + 1;
 const CHARS_IN_SYMBOLS = '/'.charCodeAt() - '!'.charCodeAt() + 1
     + '@'.charCodeAt() - ':'.charCodeAt() + 1
     + '`'.charCodeAt() - '['.charCodeAt() + 1
@@ -32,7 +32,7 @@ const getPasswordComplexity = (length, uppercase, lowercase, numbers, symbols) =
     if (passwordEntropy > 35 && passwordEntropy <= 59) {
         return "Medium";
     }
-    if (passwordEntropy > 60) {
+    if (passwordEntropy >= 60) {
         return "Strong";
     }
 }

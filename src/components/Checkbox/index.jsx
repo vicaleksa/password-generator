@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./style.module.css";
-// import iconCheck from "/src/images/icon-check.svg";
 
 function Checkbox({ text, name, checked, onChange }) {
     return (

@@ -4,14 +4,14 @@ import Slider from "../Slider";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
 import StrengthMeter from "../StrengthMeter";
-import generatePassword from "utils/generatePassword.jsx";
+import generatePassword from "utils/generatePassword";
 import getPasswordComplexity from "utils/getPasswordComplexity";
 
 function Form({ onSubmit }) {
     const [formData, setFormData] = useState(
         {
             length: 4,
-            uppercase: true,
+            uppercase: false,
             lowercase: false,
             numbers: false,
             symbols: false
@@ -93,7 +93,7 @@ function Form({ onSubmit }) {
                 />
             </div>
             <StrengthMeter passwordComplexity={passwordComplexity} />
-            <Button />
+            <Button disabled={!formData.uppercase && !formData.lowercase && !formData.numbers && !formData.symbols} />
         </form>
     )
 }
