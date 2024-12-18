@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import styles from "./style.module.css";
-import PasswordVeiw from "../PasswordVeiw";
-import Form from "../Form";
+import React, { useState } from 'react';
+import styles from './style.module.css';
+import PasswordVeiw from '../PasswordVeiw';
+import Form from '../Form';
 
 function App() {
     const [password, setPassword] = useState(null);
 
-    const onSubmit = (password) => setPassword(password);
+    const onSubmit = (newPassword) => setPassword(newPassword);
 
     return (
         <div className={styles.app}>
@@ -18,7 +18,7 @@ function App() {
                 <Form onSubmit={onSubmit} />
             </main>
         </div>
-    )
+    );
 }
 
 export default App;

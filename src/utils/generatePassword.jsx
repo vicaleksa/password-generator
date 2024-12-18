@@ -15,14 +15,14 @@ const getRandomChar = (uppercase, lowercase, numbers, symbols) => {
     const charSet = charSets[Math.floor(Math.random() * charSets.length)];
     const charCode = Math.floor(Math.random() * (charSet[1] - charSet[0] + 1) + charSet[0]);
     return String.fromCharCode(charCode);
-}
+};
 
 const generatePassword = (length, uppercase, lowercase, numbers, symbols) => {
     let password = '';
     for (let i = 0; i < length; i++) {
-        password = password + getRandomChar(uppercase, lowercase, numbers, symbols);
+        password += getRandomChar(uppercase, lowercase, numbers, symbols);
     }
     return password;
-}
+};
 
 export default generatePassword;

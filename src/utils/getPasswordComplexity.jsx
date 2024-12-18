@@ -24,17 +24,15 @@ const getPasswordComplexity = (length, uppercase, lowercase, numbers, symbols) =
     const passwordEntropy = length * Math.log2(charSet);
 
     if (passwordEntropy <= 28) {
-        return "Too weak!";
+        return 'Too weak!';
     }
     if (passwordEntropy > 28 && passwordEntropy <= 35) {
-        return "Weak";
+        return 'Weak';
     }
-    if (passwordEntropy > 35 && passwordEntropy <= 59) {
-        return "Medium";
+    if (passwordEntropy > 35 && passwordEntropy <= 60) {
+        return 'Medium';
     }
-    if (passwordEntropy >= 60) {
-        return "Strong";
-    }
-}
+    return 'Strong';
+};
 
 export default getPasswordComplexity;

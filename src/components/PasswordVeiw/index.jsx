@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styles from "./style.module.css";
-import copyTextToClipboard from "utils/copyTextToClipboard";
+import React, { useState } from 'react';
+import copyTextToClipboard from 'utils/copyTextToClipboard';
 import clsx from 'clsx';
+import styles from './style.module.css';
 
 function PasswordVeiw({ password }) {
     const [passwordCopyed, setPasswordCopyed] = useState(false);
@@ -10,22 +10,24 @@ function PasswordVeiw({ password }) {
         <div className={styles.password_container}>
             <p className={clsx(
                 styles.password,
-                {[styles.password_filled]: password}
-            )}>
-                {password || "P4$5W0rD!"}
+                { [styles.password_filled]: password },
+            )}
+            >
+                {password || 'P4$5W0rD!'}
             </p>
             {passwordCopyed && <div className={styles.password_copyed}>Copyed</div>}
             <button
                 disabled={!password}
                 className={styles.btn_copy}
+                type="button"
+                aria-label="Copy password"
                 onClick={() => {
-                        copyTextToClipboard(password);
-                        setPasswordCopyed(true);
-                        setTimeout(() => {
-                            setPasswordCopyed(false);
-                        }, 2000)
-                    }
-                }
+                    copyTextToClipboard(password);
+                    setPasswordCopyed(true);
+                    setTimeout(() => {
+                        setPasswordCopyed(false);
+                    }, 2000);
+                }}
             >
                 <svg
                     className={styles.iconCopy}
@@ -36,7 +38,7 @@ function PasswordVeiw({ password }) {
                 </svg>
             </button>
         </div>
-    )
+    );
 }
 
 export default PasswordVeiw;

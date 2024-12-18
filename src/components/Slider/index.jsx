@@ -1,8 +1,14 @@
-import React from "react";
-import styles from "./style.module.css";
+import React from 'react';
+import styles from './style.module.css';
 
-function Slider( {name, value, min, max, onChange} ) {
-    const percentValue = 100 - 100 / (max - min) * (max - value) - 0.1;
+function Slider({
+    name,
+    value,
+    min,
+    max,
+    onChange,
+}) {
+    const percentValue = 100 - (100 / (max - min)) * (max - value) - 0.1;
 
     return (
         <div className={styles.slider_container}>
@@ -10,7 +16,8 @@ function Slider( {name, value, min, max, onChange} ) {
                 <label htmlFor="length">Character Length</label>
                 <span className={styles.length}>{value}</span>
             </div>
-            <input className={styles.range_input}
+            <input
+                className={styles.range_input}
                 type="range"
                 id="length"
                 value={value}
@@ -18,12 +25,12 @@ function Slider( {name, value, min, max, onChange} ) {
                 min={min}
                 max={max}
                 style={{
-                    background: `linear-gradient(to right, #A4FFAF ${percentValue}%, #18171F ${percentValue}%)`
+                    background: `linear-gradient(to right, #A4FFAF ${percentValue}%, #18171F ${percentValue}%)`,
                 }}
                 onChange={onChange}
             />
         </div>
-    )
+    );
 }
 
 export default Slider;

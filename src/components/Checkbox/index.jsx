@@ -1,7 +1,12 @@
-import React from "react";
-import styles from "./style.module.css";
+import React from 'react';
+import styles from './style.module.css';
 
-function Checkbox({ text, name, checked, onChange }) {
+function Checkbox({
+    text,
+    name,
+    checked,
+    onChange,
+}) {
     return (
         <label className={styles.checkbox_container} htmlFor={name}>
             <input
@@ -13,7 +18,7 @@ function Checkbox({ text, name, checked, onChange }) {
             />
             <span className={styles.checkbox_label}>{text}</span>
         </label>
-    )
+    );
 }
 
 export default Checkbox;
