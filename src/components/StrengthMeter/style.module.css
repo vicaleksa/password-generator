@@ -52,7 +52,7 @@
     background-color: #A4FFAF;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .strengthMeter_container {
         padding: 1.25rem 2rem;
     }

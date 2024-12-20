@@ -10,7 +10,7 @@
     padding-top: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .form_password {
         padding: 1.5rem 2rem 2rem;
         margin-bottom: calc(12.25rem - 8.25rem);

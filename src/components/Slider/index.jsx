@@ -8,7 +8,7 @@ function Slider({
     max,
     onChange,
 }) {
-    const percentValue = 100 - (100 / (max - min)) * (max - value) - 0.1;
+    const percentValue = 100 - (100 / (max - min)) * (max - value);
 
     return (
         <div className={styles.slider_container}>

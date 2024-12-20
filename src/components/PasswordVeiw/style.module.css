@@ -41,7 +41,7 @@
 
 .btn_copy:hover .iconCopy {
     cursor: pointer;
-    fill: #ffffff;
+    fill: #fff;
 }
 
 .btn_copy:disabled .iconCopy {
@@ -49,7 +49,7 @@
     fill: #55545C;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .password_container {
         margin-bottom: 1.5rem;
         padding: 0.5rem 1rem 0.5rem 2rem;

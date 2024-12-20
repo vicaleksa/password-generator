@@ -12,6 +12,12 @@
     gap: 1rem;
 }
 
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #55545C;
+    color: #24232C;
+}
+
 .button:hover:not(:disabled) {
     cursor: pointer;
     background-color: transparent;
@@ -19,17 +25,11 @@
     color: #A4FFAF;
 }
 
-.button:disabled {
-    cursor: not-allowed;
-    background-color: #55545C;
-    color: #24232C;
+.button_icon {
+    fill: #24232C;
 }
 
 .button:disabled .button_icon {
-    fill: #55545C;
-}
-
-.button_icon {
     fill: #24232C;
 }
 
@@ -37,7 +37,7 @@
     fill: #A4FFAF;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .button {
         margin-top: 1rem;
         gap: 1.5rem;
