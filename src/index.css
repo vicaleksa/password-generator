@@ -6,7 +6,7 @@ body {
     color: #E6E5EA;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
     body {
         font-size: 1.125rem;
     }

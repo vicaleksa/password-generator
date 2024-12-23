@@ -37,7 +37,7 @@
     fill: #A4FFAF;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
     .button {
         margin-top: 1rem;
         gap: 1.5rem;

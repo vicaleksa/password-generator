@@ -56,7 +56,7 @@
     cursor: pointer;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
     .label {
         padding-bottom: 1rem;
     }

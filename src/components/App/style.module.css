@@ -1,5 +1,5 @@
 .app {
-    max-width: 540px;
+    max-width: 33.75rem;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -14,7 +14,7 @@ h1 {
     padding-bottom: 1rem;
 }
 
-@media (width >= 768px) {
+@media (width >= 48rem) {
     h1 {
         font-size: 1.5rem;
         padding-bottom: 2rem;

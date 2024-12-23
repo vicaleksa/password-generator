@@ -3,8 +3,8 @@ import copyTextToClipboard from 'utils/copyTextToClipboard';
 import clsx from 'clsx';
 import styles from './style.module.css';
 
-function PasswordVeiw({ password }) {
-    const [passwordCopyed, setPasswordCopyed] = useState(false);
+function PasswordView({ password }) {
+    const [passwordCopied, setPasswordCopied] = useState(false);
 
     return (
         <div className={styles.password_container}>
@@ -15,7 +15,7 @@ function PasswordVeiw({ password }) {
             >
                 {password || 'P4$5W0rD!'}
             </p>
-            {passwordCopyed && <div className={styles.password_copyed}>Copyed</div>}
+            {passwordCopied && <div className={styles.password_copied}>Copied</div>}
             <button
                 disabled={!password}
                 className={styles.btn_copy}
@@ -23,9 +23,9 @@ function PasswordVeiw({ password }) {
                 aria-label="Copy password"
                 onClick={() => {
                     copyTextToClipboard(password);
-                    setPasswordCopyed(true);
+                    setPasswordCopied(true);
                     setTimeout(() => {
-                        setPasswordCopyed(false);
+                        setPasswordCopied(false);
                     }, 2000);
                 }}
             >
@@ -41,4 +41,4 @@ function PasswordVeiw({ password }) {
     );
 }
 
-export default PasswordVeiw;
+export default PasswordView;
