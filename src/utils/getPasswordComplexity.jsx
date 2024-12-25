@@ -1,3 +1,5 @@
+import COMPLEXITY from 'constants/passwordComplexity';
+
 const CHARS_IN_UPPERCASE = 'Z'.charCodeAt() - 'A'.charCodeAt() + 1;
 const CHARS_IN_LOWERCASE = 'z'.charCodeAt() - 'a'.charCodeAt() + 1;
 const CHARS_IN_NUMBERS = '9'.charCodeAt() - '0'.charCodeAt() + 1;
@@ -24,15 +26,15 @@ const getPasswordComplexity = (length, uppercase, lowercase, numbers, symbols) =
     const passwordEntropy = length * Math.log2(charSet);
 
     if (passwordEntropy <= 28) {
-        return 'Too weak!';
+        return COMPLEXITY.TOO_WEAK;
     }
     if (passwordEntropy > 28 && passwordEntropy <= 35) {
-        return 'Weak';
+        return COMPLEXITY.WEAK;
     }
     if (passwordEntropy > 35 && passwordEntropy <= 60) {
-        return 'Medium';
+        return COMPLEXITY.MEDIUM;
     }
-    return 'Strong';
+    return COMPLEXITY.STRONG;
 };
 
 export default getPasswordComplexity;
