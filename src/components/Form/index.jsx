@@ -4,7 +4,7 @@ import getPasswordComplexity from 'utils/getPasswordComplexity';
 import styles from './style.module.css';
 import Slider from '../Slider';
 import Checkbox from '../Checkbox';
-import Button from '../Button';
+import GenerateButton from '../GenerateButton';
 import StrengthMeter from '../StrengthMeter';
 
 function Form({ onSubmit }) {
@@ -69,32 +69,36 @@ function Form({ onSubmit }) {
             />
             <div className={styles.checkbox_group}>
                 <Checkbox
-                    text="Include Uppercase Letters"
                     name="uppercase"
                     checked={formData.uppercase}
                     onChange={handleChange}
-                />
+                >
+                    Include Uppercase Letters
+                </Checkbox>
                 <Checkbox
-                    text="Include Lowercase Letters"
                     name="lowercase"
                     checked={formData.lowercase}
                     onChange={handleChange}
-                />
+                >
+                    Include Lowercase Letters
+                </Checkbox>
                 <Checkbox
-                    text="Include Numbers"
                     name="numbers"
                     checked={formData.numbers}
                     onChange={handleChange}
-                />
+                >
+                    Include Numbers
+                </Checkbox>
                 <Checkbox
-                    text="Include Symbols"
                     name="symbols"
                     checked={formData.symbols}
                     onChange={handleChange}
-                />
+                >
+                    Include Symbols
+                </Checkbox>
             </div>
             <StrengthMeter passwordComplexity={passwordComplexity} />
-            <Button
+            <GenerateButton
                 disabled={
                     !formData.uppercase
                     && !formData.lowercase

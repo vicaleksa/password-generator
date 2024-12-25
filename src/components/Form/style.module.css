@@ -1,5 +1,5 @@
 .form_password {
-    background-color: #24232C;
+    background-color: var(--clr-surface);
     padding: 1rem;
     display: flex;
     flex-direction: column;

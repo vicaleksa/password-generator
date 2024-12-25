@@ -2,7 +2,7 @@
     border: none;
     font-family: inherit;
     font-size: inherit;
-    background-color: #A4FFAF;
+    background-color: var(--clr-accent);
     text-transform: uppercase;
     width: 100%;
     padding: 1.125rem;
@@ -14,27 +14,27 @@
 
 .button:disabled {
     cursor: not-allowed;
-    background-color: #55545C;
-    color: #24232C;
+    background-color: var(--clr-disabled);
+    color: var(--clr-surface);
 }
 
 .button:hover:not(:disabled) {
     cursor: pointer;
     background-color: transparent;
-    outline: 0.125rem solid  #A4FFAF;
-    color: #A4FFAF;
+    outline: 0.125rem solid  var(--clr-accent);
+    color: var(--clr-accent);
 }
 
 .button_icon {
-    fill: #24232C;
+    fill: var(--clr-surface);
 }
 
 .button:disabled .button_icon {
-    fill: #24232C;
+    fill: var(--clr-surface);
 }
 
 .button:hover:not(:disabled) .button_icon {
-    fill: #A4FFAF;
+    fill: var(--clr-accent);
 }
 
 @media (width >= 48rem) {

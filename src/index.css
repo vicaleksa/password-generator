@@ -1,9 +1,21 @@
+:root {
+    --clr-primary: #E6E5EA;
+    --clr-accent: #A4FFAF;
+    --clr-background: #18171F;
+    --clr-surface: #24232C;
+    --clr-disabled: #55545C;
+    --clr-typography-secondary: #817D92;
+    --clr-danger: #F64A4A;
+    --clr-warning: #F8CD65;
+    --clr-warning-dark: #FB7C58;
+}
+
 body {
     margin: 0;
     padding: 0 1rem;
-    background-color: #121118;
+    background-color: var(--clr-background);
     font-family: "JetBrains Mono", monospace;
-    color: #E6E5EA;
+    color: var(--clr-primary);
 }
 
 @media (width >= 48rem) {

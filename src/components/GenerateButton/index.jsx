@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.css';
 
-function Button({ disabled }) {
+function GenerateButton({ disabled }) {
     return (
         <button className={styles.button} disabled={disabled} type="submit">
             Generate
@@ -17,4 +17,4 @@ function Button({ disabled }) {
     );
 }
 
-export default Button;
+export default GenerateButton;

@@ -10,7 +10,7 @@
     width: 1.25rem;
     height: 1.25rem;
     background: transparent;
-    border: 0.125rem solid #E6E5EA;
+    border: 0.125rem solid var(--clr-primary);
     transition: 500ms;
     margin: 0;
 }
@@ -27,7 +27,7 @@
 }
 
 .checkbox_input:checked {
-    background-color: #A4FFAF;
+    background-color: var(--clr-accent);
     border: none;
     flex-shrink: 0;
 }

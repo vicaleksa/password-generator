@@ -1,5 +1,5 @@
 .slider_container {
-    background-color: #24232C;
+    background-color: var(--clr-surface);
 }
 
 .label {
@@ -11,7 +11,7 @@
 
 .length {
     font-size: 1.5rem;
-    color: #A4FFAF;
+    color: var(--clr-accent);
 }
 
 .range_input {
@@ -25,13 +25,13 @@
     height: 1.75rem;
     width: 1.75rem;
     border-radius: 50%;
-    background-color: #E6E5EA;
+    background-color: var(--clr-primary);
     cursor: pointer;
 }
 
 .range_input::-webkit-slider-thumb:hover {
-    border: 0.125rem solid #A4FFAF;
-    background-color: #18171F;
+    border: 0.125rem solid var(--clr-accent);
+    background-color: var(--clr-background);
 }
 
 .range_input::-moz-range-thumb {
@@ -39,13 +39,13 @@
     width: 1.75rem;
     border: none;
     border-radius: 50%;
-    background-color: #E6E5EA;
+    background-color: var(--clr-primary);
     cursor: pointer;
 }
 
 .range_input::-moz-range-thumb:hover {
-    outline: 0.125rem solid #A4FFAF;
-    background-color: #18171F;
+    outline: 0.125rem solid var(--clr-accent);
+    background-color: var(--clr-background);
 }
 
 .range_input::-webkit-slider-runnable-track {

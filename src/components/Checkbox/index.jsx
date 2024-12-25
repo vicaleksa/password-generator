@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './style.module.css';
 
 function Checkbox({
-    text,
+    children,
     name,
     checked,
     onChange,
@@ -16,7 +16,7 @@ function Checkbox({
                 checked={checked}
                 onChange={onChange}
             />
-            <span className={styles.checkbox_label}>{text}</span>
+            <span className={styles.checkbox_label}>{children}</span>
         </label>
     );
 }

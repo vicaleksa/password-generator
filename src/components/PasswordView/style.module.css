@@ -1,6 +1,6 @@
 .password_container {
     height: 4rem;
-    background-color: #24232C;
+    background-color: var(--clr-surface);
     padding-left: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -8,7 +8,7 @@
 }
 
 .password {
-    color: #55545C;
+    color: var(--clr-disabled);
     font-size: 1.5rem;
     flex-grow: 1;
     overflow: hidden;
@@ -17,13 +17,13 @@
 }
 
 .password_filled {
-    color: #E6E5EA;
+    color: var(--clr-primary);
 }
 
 .password_copied {
     text-transform: uppercase;
     font-size: 1.125rem;
-    color: #A4FFAF;
+    color: var(--clr-accent);
 }
 
 .btn_copy {
@@ -36,7 +36,7 @@
 
 .iconCopy {
     height: 1.25rem;
-    fill: #A4FFAF;
+    fill: var(--clr-accent);
 }
 
 .btn_copy:hover .iconCopy {
@@ -46,7 +46,7 @@
 
 .btn_copy:disabled .iconCopy {
     cursor: not-allowed;
-    fill: #55545C;
+    fill: var(--clr-disabled);
 }
 
 @media (width >= 48rem) {

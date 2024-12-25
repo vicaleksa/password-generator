@@ -8,7 +8,7 @@
 }
 
 h1 {
-    color: #817D92;
+    color: var(--clr-typography-secondary);
     font-size: 1rem;
     text-align: center;
     padding-bottom: 1rem;

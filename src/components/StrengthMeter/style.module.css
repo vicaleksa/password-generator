@@ -1,5 +1,5 @@
 .strengthMeter_container {
-    background-color: #18171F;
+    background-color: var(--clr-background);
     display: flex;
     padding: 0.75rem 1rem;
     align-items: center;
@@ -10,7 +10,7 @@
 
 .strengthMeter_label {
     text-transform: uppercase;
-    color: #817D92;
+    color: var(--clr-typography-secondary);
 }
 
 .passwordStrength {
@@ -29,27 +29,27 @@
 .passwordStrength_visual_block {
     width: 0.625rem;
     height: 1.75rem;
-    border: 0.125rem solid #E6E5EA;
+    border: 0.125rem solid var(--clr-primary);
 }
 
 .tooWeak {
-    border-color: #F64A4A;
-    background-color: #F64A4A;
+    border-color: var(--clr-danger);
+    background-color: var(--clr-danger);
 }
 
 .weak {
-    border-color: #FB7C58;
-    background-color: #FB7C58;
+    border-color: var(--clr-warning-dark);
+    background-color: var(--clr-warning-dark);
 }
 
 .medium {
-    border-color: #F8CD65;
-    background-color: #F8CD65;
+    border-color: var(--clr-warning);
+    background-color: var(--clr-warning);
 }
 
 .strong {
-    border-color: #A4FFAF;
-    background-color: #A4FFAF;
+    border-color: var(--clr-accent);
+    background-color: var(--clr-accent);
 }
 
 @media (width >= 48rem) {
