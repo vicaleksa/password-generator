@@ -20,6 +20,14 @@
     height: 0.5rem;
 }
 
+.border_radius_left {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.border_radius_right {
+    border-radius: 0 1rem 1rem 0;
+}
+
 .range_input::-webkit-slider-thumb {
     appearance: none;
     height: 1.75rem;

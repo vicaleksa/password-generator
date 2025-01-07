@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import styles from './style.module.css';
 
 function Slider({
@@ -17,7 +18,10 @@ function Slider({
                 <span className={styles.length}>{value}</span>
             </div>
             <input
-                className={styles.range_input}
+                className={clsx(styles.range_input, {
+                    [styles.border_radius_left]: Number(value) === min,
+                    [styles.border_radius_right]: Number(value) === max,
+                })}
                 type="range"
                 id="length"
                 value={value}
