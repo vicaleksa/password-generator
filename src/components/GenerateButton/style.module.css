@@ -12,6 +12,7 @@
     align-items: center;
     gap: 1rem;
     user-select: none;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-user-select: none;
 }
 

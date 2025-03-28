@@ -16,6 +16,8 @@
 
 .range_input {
     appearance: none;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-border-radius: 0;
     width: 100%;
     height: 0.5rem;
 }
