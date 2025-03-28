@@ -15,6 +15,7 @@ body {
     padding: 0 1rem;
     background-color: var(--clr-background);
     font-family: "JetBrains Mono", monospace;
+    font-variant-ligatures: none;
     color: var(--clr-primary);
 }
 
